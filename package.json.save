@@ -1,0 +1,10 @@
+{
+  "name": "pharmaguard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+

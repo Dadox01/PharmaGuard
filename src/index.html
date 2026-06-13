@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PharmaGuard - Blockchain Tracking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding-top: 50px; background-color: #f8f9fa; }
+        .card { transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .status-badge { font-size: 0.8rem; padding: 5px 10px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h1>PharmaGuard Dashboard</h1>
+                <p class="text-muted">Monitoraggio Sicuro dei farmaci basato su BlockChain</p>
+                <hr>
+            </div>
+        </div>
+
+        <div id="lottiRow" class="row">
+            </div>
+    </div>
+
+    <div id="lottoTemplate" style="display: none;">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title drug-name text-primary">Caricamento...</h5>
+                    <p class="card-text mb-1"><strong>ID:</strong> <span class="drug-id">#</span></p>
+                    <p class="card-text mb-1"><strong>Stato:</strong> <span class="drug-status">--</span></p>
+                    <p class="card-text mb-3"><strong>Temp:</strong> <span class="drug-temp">--</span> °C</p>
+                    <button class="btn btn-outline-primary btn-register w-100" type="button" data-id="0">Registra Lotto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@truffle/contract@4.3.5/dist/truffle-contract.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
